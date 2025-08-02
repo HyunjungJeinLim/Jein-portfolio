@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jein Lim Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <!-- <nav class="navbar">
+    <div class="logo"><span id="logoText" class="neon-text"></span></div>
+    <div class="menu">
+      <a href="#home">HOME</a>
+      <a href="#skills">SKILL</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#projects">PROJECT</a>
+      <a href="#particles-section">CONTACT</a>
+      </div>
+  </nav> -->
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <!-- <img id="hero-img" src="./Hero.png" alt="Hero Jein" /> -->
+    <div class="hero-text">
+      <h1><span class="typewriter">Hello, I’m <span style="color: #F97316;">Jein</span></span></h1>
+      <p>Full stack developer passionate about learning through building <br>from intuitive UIs to backend logic.</p>
+    </div>
+  </section>
+
+  <!-- Skill Section -->
+  <section id="skills" class="skills-section">
+    <div class="skills-container">
+      <div class="skills-left">
+        <h2 class="section-title">MY SKILL.</h2>
+        <p>A diverse set of tools and technologies I’ve used to build, deploy, and design full stack applications, creative tools, and experiences.</p>
+        <div id="skill-name" class="skill-name"></div>
+      </div>
+      <div class="skills-right">
+        <!-- 각 카테고리 반복 -->
+        <div class="skill-category">
+          <h3>FRONT-END</h3>
+          <div class="icons">
+            <i class="devicon-html5-plain colored" onmouseover="showSkill('HTML5')" onmouseout="hideSkill()"></i>
+            <i class="devicon-css3-plain colored" onmouseover="showSkill('CSS3')" onmouseout="hideSkill()"></i>
+            <i class="devicon-javascript-plain colored" onmouseover="showSkill('JavaScript')" onmouseout="hideSkill()"></i>
+            <i class="devicon-bootstrap-plain colored" onmouseover="showSkill('Bootstrap')" onmouseout="hideSkill()"></i>
+            <i class="devicon-tailwindcss-plain colored" onmouseover="showSkill('TailwindCSS')" onmouseout="hideSkill()"></i>
+            <i class="devicon-react-original colored" onmouseover="showSkill('React')" onmouseout="hideSkill()"></i>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>BACK-END</h3>
+          <div class="icons">
+            <i class="devicon-php-plain colored" onmouseover="showSkill('PHP')" onmouseout="hideSkill()"></i>
+            <i class="devicon-nodejs-plain colored" onmouseover="showSkill('Node.js')" onmouseout="hideSkill()"></i>
+            <i class="devicon-mysql-plain colored" onmouseover="showSkill('MySQL')" onmouseout="hideSkill()"></i>
+            <i class="devicon-docker-plain colored" onmouseover="showSkill('Docker')" onmouseout="hideSkill()"></i>
+            <i class="devicon-mongodb-plain colored" onmouseover="showSkill('MongoDB')" onmouseout="hideSkill()"></i>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>PROGRAMMING LANGUAGES</h3>
+          <div class="icons">
+            <i class="devicon-c-plain colored" onmouseover="showSkill('C')" onmouseout="hideSkill()"></i>
+            <i class="devicon-cplusplus-plain colored" onmouseover="showSkill('C++')" onmouseout="hideSkill()"></i>
+            <i class="devicon-python-plain colored" onmouseover="showSkill('Python')" onmouseout="hideSkill()"></i>
+            <i class="devicon-java-plain colored" onmouseover="showSkill('Java')" onmouseout="hideSkill()"></i>
+            <i class="devicon-csharp-plain colored" onmouseover="showSkill('C#')" onmouseout="hideSkill()"></i>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>TOOLS</h3>
+          <div class="icons">
+            <i class="devicon-vscode-plain colored" onmouseover="showSkill('VSCode')" onmouseout="hideSkill()"></i>
+            <i class="devicon-git-plain colored" onmouseover="showSkill('Git')" onmouseout="hideSkill()"></i>
+            <i class="devicon-github-original colored" onmouseover="showSkill('GitHub')" onmouseout="hideSkill()"></i>
+            <i class="devicon-amazonwebservices-original colored" onmouseover="showSkill('AWS')" onmouseout="hideSkill()"></i>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>2D & 3D DESIGN TOOL</h3>
+          <div class="icons">
+            <i class="devicon-photoshop-plain colored" onmouseover="showSkill('Photoshop')" onmouseout="hideSkill()"></i>
+            <i class="devicon-figma-plain colored" onmouseover="showSkill('Figma')" onmouseout="hideSkill()"></i>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>GAME ENGINE</h3>
+          <div class="icons">
+            <i class="devicon-unity-original colored" onmouseover="showSkill('Unity')" onmouseout="hideSkill()"></i>
+            <i class="devicon-unrealengine-original colored" onmouseover="showSkill('Unreal Engine')" onmouseout="hideSkill()"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+<section id="experience" class="experience-section">
+  <h2 class="section-title">Education & Experience</h2>
+  <div class="vertical-line"></div>
+
+  <!-- Timeline Item 1: Mob Squad -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card right">
+      <h3>2023 - 2025</h3>
+      <h2>Front of House Associate, Mob Squad</h2>
+      <p>Provided front-line customer service.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 2: Carewest -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card left">
+      <h3>2024 - 2025</h3>
+      <h2>HR Administrator (Volunteer), Carewest (AHS)</h2>
+      <p>Assisted with administrative support in a healthcare HR environment.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 3: Bow Valley -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card right">
+      <h3>2024 - 2025</h3>
+      <h2>Software Development Diploma, Bow Valley College</h2>
+      <p>Completed a full-stack development program.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 4: SABVC -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card left">
+      <h3>2024 - 2025</h3>
+      <h2>Student Association Volunteer, SABVC</h2>
+      <p>Engaged with students and supported campus events and services.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 5: Shangri-La -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card right">
+      <h3>2017 - 2019</h3>
+      <h2>Working Holiday in Australia, Shangri-La Hotel</h2>
+      <p>Provided customer service in both Café and Accommodation settings in Melbourne and Cairns.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 6: Ramada -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card left">
+      <h3>2016 - 2017</h3>
+      <h2>Reservation & Operation Coordinator, Ramada Hotel</h2>
+      <p>Managed bookings and ensuring accuracy and real-time updates across departments.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 7: Moa Payment -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card right">
+      <h3>2014 - 2015</h3>
+      <h2>Business Analyst, Moa Payment</h2>
+      <p>Conducted data analysis and supported improvements to fintech solutions.</p>
+    </div>
+  </div>
+
+  <!-- Timeline Item 8: Semyung Uni -->
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="card left">
+      <h3>2010 - 2016</h3>
+      <h2>Bachelor's of Tourism Management, Semyung University</h2>
+      <p>Completed a Tourism Management.</p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Transition Section -->
+<section class="transition-section-one"></section>
+
+
+
+<!--Project Section-->
+<section id="projects" class="projects-section">
+  <h2 class="section-title">PROJECTS.</h2>
+
+  <div class="project-gallery">
+  <!-- Hotel Management System -->
+  <a href="https://hyunjungjeinlim.github.io/HotelManagementSystem/" class="project-card" target="_blank">
+    <img src="HOTEL.png" alt="Hotel Management System" />
+    <div class="hover-text">Click!</div>
+    <div class="project-content">
+      <h3>Hotel Management System</h3>
+      <p class="subtitle">Booking & Admin System using C#</p>
+      <p class="tags">C# / .NET / WINFORMS / SQL SERVER / ADO.NET / VISUAL STUDIO</p>
+    </div>
+  </a>
+
+  <!-- Pet Care Notifier -->
+  <a href="https://github.com/HyunjungJeinLim/PetCareNotifier.git" class="project-card" target="_blank">
+    <img src="PET.png" alt="Pet Care Notifier" />
+    <div class="hover-text">Click!</div>
+    <div class="project-content">
+      <h3>Pet Care Notifier</h3>
+      <p class="subtitle">Android notification app for pet care tasks</p>
+      <p class="tags">KOTLIN / JAVA / ANDROID STUDIO / JAVA TIME API</p>
+    </div>
+  </a>
+
+  <!-- Budget Tracker -->
+  <a href="https://github.com/HyunjungJeinLim/BudgetTracker.git" class="project-card" target="_blank">
+    <img src="BG.png" alt="Budget Tracker" />
+    <div class="hover-text">Click!</div>
+    <div class="project-content">
+      <h3>Budget Tracker</h3>
+      <p class="subtitle">Track expenses with chart visualizations</p>
+      <p class="tags">C# / .NET / WINFORMS / SQL SERVER EXPRESS / ADO.NET / CRUD</p>
+    </div>
+  </a>
+
+  <!-- Studio Rental -->
+  <a href="https://hyunjungjeinlim.github.io/StudioRental-nodeJS/" class="project-card" target="_blank">
+    <img src="RENTAL.png" alt="Studio Rental" />
+    <div class="hover-text">Click!</div>
+    <div class="project-content">
+      <h3>Studio Rental</h3>
+      <p class="subtitle">Studio listing site built with Node.js</p>
+      <p class="tags">NODE.JS / EXPRESS / REST API / CRUD / JSON / DEPLOYMENT</p>
+    </div>
+  </a>
+
+  <!-- Cashier Calculator -->
+  <a href="https://hyunjungjeinlim.github.io/CashierCalculator/" class="project-card" target="_blank">
+    <img src="CALCULATOR.png" alt="Cashier Calculator" />
+    <div class="hover-text">Click!</div>
+    <div class="project-content">
+      <h3>Cashier Calculator</h3>
+      <p class="subtitle">Simulated POS receipt system with UI updates</p>
+      <p class="tags">HTML / CSS / JAVASCRIPT</p>
+    </div>
+  </a>
+
+  <!-- Connect Three -->
+  <a href="https://hyunjungjeinlim.github.io/ConnectThree/" class="project-card" target="_blank">
+    <img src="CONNECT.png" alt="Connect Three" />
+    <div class="hover-text">Click!</div>
+    <div class="project-content">
+      <h3>Connect Three</h3>
+      <p class="subtitle">Two-player browser game using DOM logic</p>
+      <p class="tags">HTML / CSS / JAVASCRIPT / GAME LOGIC / CSS ANIMATION</p>
+    </div>
+  </a>
+
+  <!-- Smart Sensor -->
+  <a href="https://github.com/HyunjungJeinLim/SmartSensor" class="project-card" target="_blank">
+    <img src="SENSOR.png" alt="Smart Sensor IoT" />
+    <div class="project-content">
+      <h3>Smart Sensor</h3>
+      <p class="subtitle">Real-time temperature/humidity monitor with alert</p>
+      <p class="tags">ARDUINO UNO / DHT11 / LCD / BUZZER / LED / C++ / ARDUINO IDE</p>
+    </div>
+  </a>
+</div>
+
+<!-- Transition Section -->
+<section class="transition-section-two"></section>
+
+<!--Contact Section-->>
+<section id="particles-section" class="contact-section">
+  <canvas id="particles-canvas"></canvas>
+  <div class="contact-wrapper">
+    <!-- LEFT -->
+    <div class="contact-left">
+      <h2 class="contact-title">CONTACT</h2>
+      <div class="contact-info">
+        <p><strong>📍</strong> Calgary, Canada</p>
+        <p>&nbsp;<strong>✉</strong>&nbsp; jeinlim10@gmail.com</p>
+      </div>
+
+      <!-- Connect Formspree-->
+      <form class="contact-form" action="https://formspree.io/f/xqaqpoed" method="POST">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+
+        <label for="message">MESSAGE</label>
+        <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+        <button type="submit">SEND</button>
+        
+      </form>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="contact-right">
+      <p>Hello, I'm Jein!</p>
+      <p>I'm currently seeking new opportunities in front-end or full-stack development.<br> If you’re looking for someone who’s passionate, adaptable, and eager to contribute, feel free to connect with me via <i>email</i> or <i>LinkedIn</i>.</p>
+
+        <div class="download-row">
+          <a href="https://drive.google.com/file/d/1Ca-iQ_EUGDx0Std2oJZVJo860eYpF9bb/view?usp=sharing" target="_blank">
+            <button>DOWNLOAD RESUME (EN)</button>
+          </a>
+
+          <div class="inline-icons">
+            
+            <a href="https://www.linkedin.com/in/JeinLim" target="_blank">
+              <img src="linkedin.png" alt="LinkedIn Icon" width="40" height="40" />
+            </a>
+            <a href="https://github.com/HyunjungJeinLim" target="_blank">
+              <img src="github.png" alt="GitHub Icon" width="40" height="40" />
+            </a>
+          </div>
+          </div>
+            <!--Footer-->
+            <footer id="site-footer">
+              ©<span id="year"></span>&nbsp;Jein Lim.&nbsp;All rights reserved.
+            </footer>
+          </div>
+</section>
+
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
