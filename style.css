@@ -627,3 +627,10 @@ html, body {
   max-width: 600px;
   margin: 0 auto;
 }
+/*mobile - line , dot hide*/
+@media (max-width: 768px) {
+  .timeline-item .dot,
+  #experience .absolute.bg-gray-300 {
+    display: none;
+  }
+}
