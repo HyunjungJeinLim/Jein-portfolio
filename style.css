@@ -55,6 +55,11 @@ html, body {
 .hero-text {
   position: relative;
   z-index: 1;
+  max-width: 90%;
+  margin: 0 auto;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 2rem); 
 }
 
 .hero-text h1 {
