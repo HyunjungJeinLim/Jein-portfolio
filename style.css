@@ -544,3 +544,86 @@ html, body {
   0%, 100% { opacity: 1 }
   50% { opacity: 0.5 }
 }
+
+/* 태블릿 이하 */
+@media (max-width: 1024px) {
+  .skills-section {
+    padding: 80px 24px;
+  }
+  .skills-container {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .skills-left,
+  .skills-right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 40px;
+  }
+  .skills-left h2 {
+    font-size: 40px;
+  }
+  .skill-name {
+    font-size: 24px;
+    height: 32px;
+  }
+  .skill-category h3 {
+    font-size: 16px;
+  }
+  .icons {
+    font-size: 32px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 소형 모바일 */
+@media (max-width: 480px) {
+  .project-card {
+    width: 90%;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+  .hero-text p {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .skills-left h2 {
+    font-size: 32px;
+  }
+  .skill-name {
+    font-size: 20px;
+    height: 28px;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
+/* 기본 스타일 일부 보완 */
+.skills-left p {
+  max-width: 600px;
+  margin: 0 auto;
+}
