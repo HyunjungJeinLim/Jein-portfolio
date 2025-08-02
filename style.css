@@ -433,6 +433,7 @@ html, body {
   gap: 1rem;
   margin-top: 2rem;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -632,7 +633,9 @@ html, body {
   .timeline-item .dot {
     display: none;
   }
-
+  .vertical-line {
+    display: none;
+  }
   #experience > .absolute.bg-gray-300 {
     display: none;
   }
