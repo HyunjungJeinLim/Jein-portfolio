@@ -6,12 +6,12 @@
   <title>Jein Lim Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>  
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="logo"><span id="logoText" class="neon-text"></span></div>
+    <!-- <div class="logo"><span id="logoText" class="neon-text"></span></div> -->
     <div class="menu">
       <a href="#home">HOME</a>
       <a href="#skills">SKILL</a>
@@ -26,7 +26,8 @@
     <img id="hero-img" src="./Hero.png" alt="Hero Jein" />
     <div class="hero-text">
       <h1><span class="typewriter">Hello, I’m <span style="color: #F97316;">Jein</span></span></h1>
-      <p>Full stack developer passionate about learning through building <br>from intuitive UIs to backend logic.</p>
+      <p>Full stack developer passionate about learning through building 
+      <br>from intuitive UIs to backend logic.</p>
     </div>
   </section>
 
@@ -34,12 +35,14 @@
   <section id="skills" class="skills-section">
     <div class="skills-container">
       <div class="skills-left">
-        <h2 class="section-title">MY SKILL.</h2>
-        <p>A diverse set of tools and technologies I’ve used to build, deploy, and design full stack applications, creative tools, and experiences.</p>
+        <h2 class="skill-title">MY SKILL.</h2>
+        <p>A diverse set of tools and technologies I’ve used to build, deploy, and design 
+        <br>full stack applications, creative tools, and experiences.</p>
         <div id="skill-name" class="skill-name"></div>
       </div>
       <div class="skills-right">
-        <!-- 각 카테고리 반복 -->
+        
+        <!-- Frontend Category -->
         <div class="skill-category">
           <h3>FRONT-END</h3>
           <div class="icons">
@@ -51,7 +54,8 @@
             <i class="devicon-react-original colored" onmouseover="showSkill('React')" onmouseout="hideSkill()"></i>
           </div>
         </div>
-
+        
+        <!-- Backend Category -->
         <div class="skill-category">
           <h3>BACK-END</h3>
           <div class="icons">
@@ -62,7 +66,8 @@
             <i class="devicon-mongodb-plain colored" onmouseover="showSkill('MongoDB')" onmouseout="hideSkill()"></i>
           </div>
         </div>
-
+        
+        <!-- Programming Language Category -->
         <div class="skill-category">
           <h3>PROGRAMMING LANGUAGES</h3>
           <div class="icons">
@@ -73,7 +78,8 @@
             <i class="devicon-csharp-plain colored" onmouseover="showSkill('C#')" onmouseout="hideSkill()"></i>
           </div>
         </div>
-
+        
+        <!-- Programming Tools Category -->
         <div class="skill-category">
           <h3>TOOLS</h3>
           <div class="icons">
@@ -83,7 +89,8 @@
             <i class="devicon-amazonwebservices-original colored" onmouseover="showSkill('AWS')" onmouseout="hideSkill()"></i>
           </div>
         </div>
-
+        
+        <!-- Design Tools Category -->
         <div class="skill-category">
           <h3>2D & 3D DESIGN TOOL</h3>
           <div class="icons">
@@ -91,7 +98,8 @@
             <i class="devicon-figma-plain colored" onmouseover="showSkill('Figma')" onmouseout="hideSkill()"></i>
           </div>
         </div>
-
+        
+        <!-- Game Engine Category -->
         <div class="skill-category">
           <h3>GAME ENGINE</h3>
           <div class="icons">
@@ -148,7 +156,7 @@
     </div>
   </div>
 
-  <!-- Timeline Item 5: Shangri-La -->
+  <!-- Timeline Item 5: Working Holiday -->
   <div class="timeline-item">
     <div class="dot"></div>
     <div class="card right">
@@ -178,7 +186,7 @@
     </div>
   </div>
 
-  <!-- Timeline Item 8: Semyung Uni -->
+  <!-- Timeline Item 8: Semyung University -->
   <div class="timeline-item">
     <div class="dot"></div>
     <div class="card left">
@@ -190,20 +198,17 @@
 
 </section>
 
-
 <!-- Transition Section -->
 <section class="transition-section-one"></section>
-
-
 
 <!--Project Section-->
 <section id="projects" class="projects-section">
   <h2 class="section-title">PROJECTS.</h2>
-
   <div class="project-gallery">
+
   <!-- Hotel Management System -->
   <a href="https://hyunjungjeinlim.github.io/HotelManagementSystem/" class="project-card" target="_blank">
-    <img src="HOTEL.png" alt="Hotel Management System" />
+    <img src="./assets/HOTEL.png" alt="Hotel Management System" />
     <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Hotel Management System</h3>
@@ -214,7 +219,7 @@
 
   <!-- Pet Care Notifier -->
   <a href="https://github.com/HyunjungJeinLim/PetCareNotifier.git" class="project-card" target="_blank">
-    <img src="PET.png" alt="Pet Care Notifier" />
+    <img src="./assets/PET.png" alt="Pet Care Notifier" />
     <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Pet Care Notifier</h3>
@@ -225,7 +230,7 @@
 
   <!-- Budget Tracker -->
   <a href="https://github.com/HyunjungJeinLim/BudgetTracker.git" class="project-card" target="_blank">
-    <img src="BG.png" alt="Budget Tracker" />
+    <img src="./assets/BG.png" alt="Budget Tracker" />
     <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Budget Tracker</h3>
@@ -236,7 +241,7 @@
 
   <!-- Studio Rental -->
   <a href="https://hyunjungjeinlim.github.io/StudioRental-nodeJS/" class="project-card" target="_blank">
-    <img src="RENTAL.png" alt="Studio Rental" />
+    <img src="./assets/RENTAL.png" alt="Studio Rental" />
     <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Studio Rental</h3>
@@ -247,7 +252,7 @@
 
   <!-- Cashier Calculator -->
   <a href="https://hyunjungjeinlim.github.io/CashierCalculator/" class="project-card" target="_blank">
-    <img src="CALCULATOR.png" alt="Cashier Calculator" />
+    <img src="./assets/CALCULATOR.png" alt="Cashier Calculator" />
     <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Cashier Calculator</h3>
@@ -258,7 +263,7 @@
 
   <!-- Connect Three -->
   <a href="https://hyunjungjeinlim.github.io/ConnectThree/" class="project-card" target="_blank">
-    <img src="CONNECT.png" alt="Connect Three" />
+    <img src="./assets/CONNECT.png" alt="Connect Three" />
     <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Connect Three</h3>
@@ -269,7 +274,8 @@
 
   <!-- Smart Sensor -->
   <a href="https://github.com/HyunjungJeinLim/SmartSensor" class="project-card" target="_blank">
-    <img src="SENSOR.png" alt="Smart Sensor IoT" />
+    <img src="./assets/SENSOR.png" alt="Smart Sensor IoT" />
+    <div class="hover-text">Click!</div>
     <div class="project-content">
       <h3>Smart Sensor</h3>
       <p class="subtitle">Real-time temperature/humidity monitor with alert</p>
@@ -285,7 +291,7 @@
 <section id="particles-section" class="contact-section">
   <canvas id="particles-canvas"></canvas>
   <div class="contact-wrapper">
-    <!-- LEFT -->
+    <!-- Contact-LEFT -->
     <div class="contact-left">
       <h2 class="contact-title">CONTACT</h2>
       <div class="contact-info">
@@ -309,33 +315,33 @@
       </form>
     </div>
 
-    <!-- RIGHT -->
+    <!-- Contact-RIGHT -->
     <div class="contact-right">
       <p>Hello, I'm Jein!</p>
       <p>I'm currently seeking new opportunities in front-end or full-stack development.<br> If you’re looking for someone who’s passionate, adaptable, and eager to contribute, feel free to connect with me via <i>email</i> or <i>LinkedIn</i>.</p>
-
+        <!-- Download Resume -->
         <div class="download-row">
           <a href="https://drive.google.com/file/d/1Ca-iQ_EUGDx0Std2oJZVJo860eYpF9bb/view?usp=sharing" target="_blank">
             <button>DOWNLOAD RESUME</button>
           </a>
-
-          <div class="inline-icons">
-            
-            <a href="https://www.linkedin.com/in/JeinLim" target="_blank">
-              <img src="linkedin.png" alt="LinkedIn Icon" width="40" height="40" />
-            </a>
-            <a href="https://github.com/HyunjungJeinLim" target="_blank">
-              <img src="github.png" alt="GitHub Icon" width="40" height="40" />
-            </a>
-          </div>
-          </div>
-            <!--Footer-->
-            <footer id="site-footer">
-              ©<span id="year"></span>&nbsp;Jein Lim.&nbsp;All rights reserved.
-            </footer>
-          </div>
+                
+        <div class="inline-icons">
+          <!--Linkedin-->
+          <a href="https://www.linkedin.com/in/JeinLim" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn Icon" width="40" height="40" />
+          </a>
+          <!--Github-->
+          <a href="https://github.com/HyunjungJeinLim" target="_blank">
+             <img src="./assets/github.png" alt="GitHub Icon" width="40" height="40" />
+          </a>
+        </div>
+        </div>
+          <!--Footer-->
+          <footer id="site-footer">
+            ©<span id="year"></span>&nbsp;Jein Lim.&nbsp;All rights reserved.
+          </footer>
+    </div>
 </section>
-
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

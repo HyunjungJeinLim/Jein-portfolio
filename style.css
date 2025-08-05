@@ -30,6 +30,7 @@ html, body {
   color: #f8aa0ff9;
 }
 
+/*** Hero Section ***/
 .hero {
   height: 100vh;
   display: flex;
@@ -51,7 +52,6 @@ html, body {
   transition: all 0.3s ease;
   z-index: 0;
 }
-
 
 .hero-text {
   position: relative;
@@ -78,6 +78,7 @@ html, body {
   color: #F1420C;
 }
 
+/* Typewriter animation */
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
@@ -96,24 +97,13 @@ html, body {
   50% { border-color: black }
 }
 
-/*Section Title*/
-.section-title {
-  font-family: 'Bitter', serif;
-  font-size: 60px;
-  font-weight: 800;
-  color: #1D4ED8;
-  text-align: center;
-  margin-bottom: 2rem;
-  letter-spacing: -0.5px;
-}
-
-/* Skills Section */
+/*** Skill Section ***/
 .skills-section {
   background-color: #FBF3DF;
   padding: 128px 48px;
-  min-height: 100vh; 
+  min-height: 100vh;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .skills-container {
@@ -122,35 +112,28 @@ html, body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   gap: 40px;
 }
 
-.skills-left,
-.skills-right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-}
-
 /* Skill - Left */
+.skills-left {
+  flex: 1;
+  text-align: center;
+}
 .skills-left h2 {
   font-size: 60px;
   font-weight: 800;
   color: #1D4ED8;
   margin-bottom: 24px;
 }
-
 .skills-left p {
   font-size: 18px;
   color: #333;
   line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
 }
-
 .skill-name {
   font-size: 32px;
   font-weight: 600;
@@ -160,17 +143,24 @@ html, body {
   transition: all 0.3s;
 }
 
-/* Icon - Right */
-.skill-category {
-  margin-bottom: 32px;
-  width: 100%;
+/* Skill - Right */
+.skills-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
 }
 
+/* Icon Groups */
+.skill-category {
+  width: 100%;
+}
 .skill-category h3 {
   font-size: 18px;
   margin-bottom: 12px;
+  text-align: center;
 }
-
 .icons {
   display: flex;
   justify-content: center;
@@ -178,14 +168,12 @@ html, body {
   flex-wrap: wrap;
   font-size: 40px;
 }
-
 .icons i:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease;
 }
 
-
-/* Experience */
+/*** Experience Section ***/
 .experience-section {
   position: relative;
   background-color: #fff9f0;
@@ -193,6 +181,7 @@ html, body {
   overflow: hidden;
 }
 
+/* Section Title */
 .section-title {
   text-align: center;
   font-size: 50px;
@@ -202,29 +191,28 @@ html, body {
   letter-spacing: -0.5px;
 }
 
+/* Center Vertical Line */
 .vertical-line {
   position: absolute;
   left: 50%;
   top: 320px;
-  bottom: 190px;
+  bottom: 225px;
   width: 2px;
   background: #ddd;
   transform: translateX(-50%);
   z-index: 0;
 }
 
+/* Timeline Item Container */
 .timeline-item {
   position: relative;
   max-width: 960px;
-  margin: 0 auto 10px;
+  margin: 0 auto 64px;
   display: flex;
   align-items: center;
 }
 
-.timeline-item:nth-child(even) .card {
-  margin-top: 40px;
-}
-
+/* Center Dot */
 .timeline-item .dot {
   position: absolute;
   left: 50%;
@@ -238,9 +226,8 @@ html, body {
   box-shadow: 0 0 8px rgba(241, 66, 12, 0.3);
 }
 
+/* Card */
 .timeline-item .card {
-  background: none;
-  padding: 0px;
   width: 100%;
   max-width: 420px;
   opacity: 0;
@@ -248,36 +235,46 @@ html, body {
   transition: all 0.8s ease-out;
 }
 
+/* Card Alignment */
 .timeline-item .card.right {
   margin-left: auto;
   text-align: right;
 }
-
 .timeline-item .card.left {
   margin-right: auto;
   text-align: left;
 }
 
+/* Card Text */
 .card h3 {
   font-size: 14px;
   font-weight: 600;
   color: #555;
   margin-bottom: 6px;
 }
-
 .card h2 {
   font-size: 18px;
   font-weight: 700;
   color: #F1420C;
   margin-bottom: 6px;
 }
-
 .card p {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
 }
 
+/* Mobile: hide dot and line */
+@media (max-width: 768px) {
+  .timeline-item .dot {
+    display: none;
+  }
+  .vertical-line {
+    display: none;
+  }
+}
+
+/*** Project Section ***/
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -293,6 +290,7 @@ html, body {
   text-decoration: none;
   color: black;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .project-card:hover {
@@ -301,14 +299,36 @@ html, body {
 
 .project-card img {
   width: 100%;
-  height: 200px;          
-  object-fit: cover;      
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Hover text */
+.hover-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.project-card:hover .hover-text {
+  opacity: 1;
+}
+
+/* Text block */
 .project-content {
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .project-content h3 {
@@ -331,52 +351,19 @@ html, body {
   letter-spacing: 0.5px;
 }
 
-.project-image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 10px 10px 0 0;
-}
-
-.project-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 4px 10px;
-  border-radius: 6px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.project-image-wrapper:hover .hover-text {
-  opacity: 1;
-}
-
-/*Transaction Section*/
+/* Transition Section */
 .transition-section-one {
-  height: 80px; 
-  background: white
+  height: 80px;
+  background: white;
 }
 
 .transition-section-two {
-  height: 300px; 
-  background: white
+  height: 200px;
+  background: white;
 }
- #particles-section {
+
+/***Contact Section***/
+#particles-section {
   position: relative;
   width: 100%;
   max-width: 100vw;
@@ -416,7 +403,6 @@ html, body {
 .contact-right {
   flex: 1;
   min-width: 300px;
-  box-sizing: border-box;
 }
 
 .contact-title {
@@ -478,6 +464,7 @@ html, body {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .download-row {
@@ -508,7 +495,15 @@ html, body {
   vertical-align: middle;
 }
 
-/* 반응형 */
+#site-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding: 0 0 3rem 0;
+}
+
+/* responsive  */
 @media screen and (max-width: 768px) {
   .contact-wrapper {
     flex-direction: column;
@@ -518,6 +513,9 @@ html, body {
   .download-row {
     justify-content: center;
   }
+  #site-footer {
+    justify-content: center;
+  }
 }
 
 .arrow {
@@ -525,21 +523,6 @@ html, body {
   height: 20px;
   color: #555;
   animation: bounce 1.2s infinite;
-}
-
-#site-footer {
-  align-self: flex-start;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 1rem;
-  color: #f3f1f0;
-  background-color: transparent;
-  font-family: 'Bitter', serif;
-  text-shadow: 0 0 4px #023b21;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes bounce {
@@ -552,7 +535,7 @@ html, body {
   50% { opacity: 0.5 }
 }
 
-/* 태블릿 이하 */
+/* Tablet */
 @media (max-width: 1024px) {
   .skills-section {
     padding: 80px 24px;
@@ -569,7 +552,7 @@ html, body {
   }
 }
 
-/* 모바일 */
+/* Mobile 768px */
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 32px;
@@ -619,28 +602,28 @@ html, body {
   .contact-right {
     padding: 0 1rem;
   }
-
+  .timeline-item .dot,
+  .vertical-line,
+  #experience > .absolute.bg-gray-300 {
+    display: none;
+  }
 }
 
-/* 소형 모바일 */
+/* Mobile 480px*/
 @media (max-width: 480px) {
-  
   .navbar {
     padding: 12px 20px;
     flex-direction: column;
     align-items: flex-start;
   }
-
   .menu {
     gap: 16px;
     font-size: 12px;
     align-items: flex-start;
   }
-
   .project-card {
     width: 90%;
   }
-
   .typewriter {
     font-size: 25px;
     padding-right: 50px;
@@ -673,20 +656,3 @@ html, body {
   }
 }
 
-/* 기본 스타일 일부 보완 */
-.skills-left p {
-  max-width: 600px;
-  margin: 0 auto;
-}
-/*mobile - line , dot hide*/
-@media (max-width: 768px) {
-  .timeline-item .dot {
-    display: none;
-  }
-  .vertical-line {
-    display: none;
-  }
-  #experience > .absolute.bg-gray-300 {
-    display: none;
-  }
-}

@@ -1,5 +1,3 @@
-
-
 // Glow on scroll
 const heroImage = document.getElementById("hero-img");
 window.addEventListener("scroll", () => {
@@ -41,9 +39,7 @@ function hideSkill() {
     });
   });
 
-
   //Particla
-
   document.addEventListener("DOMContentLoaded", () => {
   let camera, scene, renderer, particles;
   let mouseX = 0;
