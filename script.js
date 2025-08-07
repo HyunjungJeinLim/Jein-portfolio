@@ -108,12 +108,14 @@ function hideSkill() {
 
   //Contact
   window.addEventListener("scroll", () => {
-  const contact = document.getElementById("contact");
-  const rect = contact.getBoundingClientRect();
-  if (rect.top < window.innerHeight * 0.9) {
-    contact.classList.add("visible");
-  }
-});
+    const contact = document.getElementById("particles-section");
+    if (contact) {
+      const rect = contact.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.9) {
+        contact.classList.add("visible");
+      }
+    }
+  });
 
-// Auto Year
-document.getElementById("year").textContent = new Date().getFullYear();
+  // Auto Year
+  document.getElementById("year").textContent = new Date().getFullYear();
